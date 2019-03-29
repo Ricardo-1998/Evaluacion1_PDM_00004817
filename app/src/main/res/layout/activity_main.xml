@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contador de productos"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:gravity="center">
+
+         <TextView
+             android:id="@+id/contador1"
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:text="@string/tv_name"
+             android:layout_margin="10dp"
+             android:background="@color/colorPrimary"
+             android:gravity="center" />
+
+         <TextView
+             android:id="@+id/contador2"
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:text="@string/tv_name"
+             android:layout_margin="10dp"
+             android:background="@color/colorAccent"
+             android:gravity="center" />
+
+         <TextView
+             android:id="@+id/contador3"
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:text="@string/tv_name"
+             android:layout_margin="10dp"
+             android:background="@color/colorPrimaryDark"
+             android:gravity="center" />
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/contador4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="@string/tv_name"
+            android:layout_margin="10dp"
+            android:background="@color/color1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/contador5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="@string/tv_name"
+            android:layout_margin="10dp"
+            android:background="@color/color2"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/contador6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="@string/tv_name"
+            android:layout_margin="10dp"
+            android:background="@color/color3"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/contador7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="@string/tv_name"
+            android:layout_margin="10dp"
+            android:background="@color/color4"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/contador8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="@string/tv_name"
+            android:layout_margin="10dp"
+            android:background="@color/color5"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/contador9"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="@string/tv_name"
+            android:layout_margin="10dp"
+            android:background="@color/color6"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:layout_marginLeft="@dimen/margin_left_tv"/>
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Escribe el usuario aqui"
+        android:layout_marginLeft="@dimen/margin_left_tv"
+        android:layout_marginRight="@dimen/margin_right_et"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo Electronico"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/margin_left_tv"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EScribe el usuario aqui"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_left_tv"
+        android:layout_marginRight="@dimen/margin_right_et"/>
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_gravity="center"/>
+</LinearLayout>
