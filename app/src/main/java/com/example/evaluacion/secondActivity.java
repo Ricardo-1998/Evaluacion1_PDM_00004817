@@ -44,7 +44,18 @@ public class secondActivity extends AppCompatActivity {
 
 
         mButton.setOnClickListener(v->{
-            resultado ="User: "+mIntent.getStringExtra(appConstants.TEXT_KEY) + "\n"+"Emai: "+ mIntent.getStringExtra(appConstants.TEXT_KEY2);
+            resultado ="User: "+mIntent.getStringExtra(appConstants.TEXT_KEY) + "\n"+"Emai: "+ mIntent.getStringExtra(appConstants.TEXT_KEY2)+
+                    "total: "+mIntent.getStringExtra(appConstants.TEXT_KEY13) + "\n" +
+                    "Producto1: "+mIntent.getStringExtra(appConstants.TEXT_KEY4) + "\n"+
+                    "Producto2: "+mIntent.getStringExtra(appConstants.TEXT_KEY5) + "\n"+
+                    "Producto3: "+mIntent.getStringExtra(appConstants.TEXT_KEY6) + "\n"+
+                    "Producto4: "+mIntent.getStringExtra(appConstants.TEXT_KEY7) + "\n"+
+                    "Producto5: "+mIntent.getStringExtra(appConstants.TEXT_KEY8) + "\n"+
+                    "Producto6: "+mIntent.getStringExtra(appConstants.TEXT_KEY9) + "\n"+
+                    "Producto7: "+mIntent.getStringExtra(appConstants.TEXT_KEY10) + "\n"+
+                    "Producto8: "+mIntent.getStringExtra(appConstants.TEXT_KEY11) + "\n"+
+                    "Producto9: "+mIntent.getStringExtra(appConstants.TEXT_KEY12) + "\n";
+
             Intent mIntent2 = new Intent();
             mIntent2.setAction(Intent.ACTION_SEND);
             mIntent2.setType("text/plain");

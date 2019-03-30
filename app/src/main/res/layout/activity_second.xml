@@ -37,7 +37,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Usuario: "
+                android:text="Email: "
             android:textSize="15sp"/>
         <TextView
             android:id="@+id/email_second"
@@ -54,7 +54,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Usuario: "
+            android:text="Total: "
             android:textSize="15sp"/>
         <TextView
             android:id="@+id/total_productos"

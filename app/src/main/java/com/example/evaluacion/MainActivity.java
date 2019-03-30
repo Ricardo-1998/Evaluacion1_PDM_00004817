@@ -40,23 +40,26 @@ public class MainActivity extends AppCompatActivity {
 
 
         Btsend.setOnClickListener(v->{
-            numero.set(cont1[0] + cont1[1] + cont1[2] + cont1[3] + cont1[4] + cont1[5] + cont1[6] + cont1[7] + cont1[8]);
-            Intent intent = new Intent(this, secondActivity.class);
-            intent.putExtra(appConstants.TEXT_KEY, usuario.getText().toString());
-            intent.putExtra(appConstants.TEXT_KEY2, email.getText().toString());
+            if (verificacion()) {
+                numero.set(cont1[0] + cont1[1] + cont1[2] + cont1[3] + cont1[4] + cont1[5] + cont1[6] + cont1[7] + cont1[8]);
+                Intent intent = new Intent(this, secondActivity.class);
+                intent.putExtra(appConstants.TEXT_KEY, usuario.getText().toString());
+                intent.putExtra(appConstants.TEXT_KEY2, email.getText().toString());
 
-            intent.putExtra(appConstants.TEXT_KEY4, cont1[0]+"");
-            intent.putExtra(appConstants.TEXT_KEY5, cont1[1]+"");
-            intent.putExtra(appConstants.TEXT_KEY6, cont1[2]+"");
-            intent.putExtra(appConstants.TEXT_KEY7, cont1[3]+"");
-            intent.putExtra(appConstants.TEXT_KEY8, cont1[4]+"");
-            intent.putExtra(appConstants.TEXT_KEY9, cont1[5]+"");
-            intent.putExtra(appConstants.TEXT_KEY10, cont1[6]+"");
-            intent.putExtra(appConstants.TEXT_KEY11, cont1[7]+"");
-            intent.putExtra(appConstants.TEXT_KEY12, cont1[8]+"");
-            intent.putExtra(appConstants.TEXT_KEY13, numero+"");
+                intent.putExtra(appConstants.TEXT_KEY4, cont1[0]+"");
+                intent.putExtra(appConstants.TEXT_KEY5, cont1[1]+"");
+                intent.putExtra(appConstants.TEXT_KEY6, cont1[2]+"");
+                intent.putExtra(appConstants.TEXT_KEY7, cont1[3]+"");
+                intent.putExtra(appConstants.TEXT_KEY8, cont1[4]+"");
+                intent.putExtra(appConstants.TEXT_KEY9, cont1[5]+"");
+                intent.putExtra(appConstants.TEXT_KEY10, cont1[6]+"");
+                intent.putExtra(appConstants.TEXT_KEY11, cont1[7]+"");
+                intent.putExtra(appConstants.TEXT_KEY12, cont1[8]+"");
+                intent.putExtra(appConstants.TEXT_KEY13, numero+"");
 
-            startActivity(intent);
+                startActivity(intent);
+            }
+
 
 
         });
@@ -77,6 +80,18 @@ public class MainActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         Btsend = findViewById(R.id.bt_send);
 
+    }
+
+    public boolean verificacion(){
+        if (usuario.getText().toString().equals("")) {
+            usuario.setError("Obligatorio");
+            return false;
+        }
+        if (email.getText().toString().equals("")){
+            email.setError("Obligatorio");
+            return false;
+        }
+        return true;
     }
 
 
